@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterios del Rosario</title>
+    <link rel="icon" href="angel.png" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav {
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: brown;
+            font-size: 18px;
+        }
+        li{
+            font-size: 2rem;
+            color: brown;
+        }
+        .misterios ul {
+            display: none;
+            padding-left: 20px;
+        }
+
+        h1 {
+            color: brown;
+            cursor: pointer;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Gozosos">Gozosos</a>
+        <a href="#Luminosos">Luminosos</a>
+        <a href="#Dolorosos">Dolorosos</a>
+        <a href="#Gloriosos">Gloriosos</a>
+    </nav>
+
+    <section>
+        <div class="misterios" id="Gozosos">
+            <h1 onclick="toggleVisibility(this)">Misterios Gozosos</h1>
+            <ul>
+                <li>La Anunciación.</li>
+                <p>
+                </p>
+                <li>La Visitación.</li>
+
+                <li>El Nacimiento de Jesús.</li>
+
+                <li>La Presentación de Jesús en el Templo.</li>
+
+                <li>Jesús Perdido y Hallado en el Templo.</li>
+
+            </ul>
+        </div>
+
+        <div class="misterios" id="Luminosos">
+            <h1 onclick="toggleVisibility(this)">Misterios Luminosos</h1>
+            <ul>
+                <li>El Bautismo de Jesús en el Jordán.</li>
+                <li>Las Bodas de Caná.</li>
+                <li>La Anunciación de la palabra de Dios.</li>
+                <li>La Transfiguración de Jesús.</li>
+                <li>La Institución de la Eucaristía.</li>
+            </ul>
+        </div>
+
+        <div class="misterios" id="Dolorosos">
+            <h1 onclick="toggleVisibility(this)">Misterios Dolorosos</h1>
+            <ul>
+                <li>La Oración en el Huerto.</li>
+                <li>La Flagelación.</li>
+                <li>La Coronación de Espinas.</li>
+                <li>Jesús con la Cruz a cuestas.</li>
+                <li>La Crucifixión de Jesús.</li>
+            </ul>
+        </div>
+
+        <div class="misterios" id="Gloriosos">
+            <h1 onclick="toggleVisibility(this)">Misterios Gloriosos</h1>
+            <ul>
+                <li>La Resurrección.</li>
+                <li>La Ascensión.</li>
+                <li>Pentecostés.</li>
+                <li>La Asunción de María.</li>
+                <li>La Coronación de María.</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function toggleVisibility(header) {
+            const ul = header.nextElementSibling;
+            if (ul.style.display === "none" || ul.style.display === "") {
+                ul.style.display = "block";
+            } else {
+                ul.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
