@@ -10,13 +10,12 @@
         body {
             background-color: cornsilk;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 60px;
         }
-
         nav {
             background-color: antiquewhite;
             padding: 10px;
         }
-
         nav a {
             margin-right: 15px;
             text-decoration: none;
@@ -37,17 +36,49 @@
             cursor: pointer;
             font-size: 3rem;
         }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: antiquewhite;
+        }
+        p{
+            font-style: oblique;
+            font-size: 1.5rem;
+            color:rgb(68, 68, 68);
+        }
+        .img{
+            display: flex;
+            align-self: center;
+        }
+        
     </style>
 </head>
 <body>
+    <header>
     <nav>
+        <a href="#Guia">Guia</a>
         <a href="#Gozosos">Gozosos</a>
         <a href="#Luminosos">Luminosos</a>
         <a href="#Dolorosos">Dolorosos</a>
         <a href="#Gloriosos">Gloriosos</a>
     </nav>
+    </header>
 
     <section>
+        <div class="guia" id="Guia">
+            <h1 onclick="toggleVisibility(this)">Como hacer el Rosario</h1>
+            <ol>
+                <li>INSTRUCCIONES</li>
+
+                <li>PERSIGNARSE</li>
+                <img src="/Presignarse.png" alt="a" class="img">
+                <p>Por la señal de la Santa Cruz, de nuestros enemigos, líbranos Señor, Dios Nuestro.
+                En el Nombre del Padre, del Hijo y del Espíritu Santo. Amen.</p>
+            </ol>
+        </div>
         <div class="misterios" id="Gozosos">
             <h1 onclick="toggleVisibility(this)">Misterios Gozosos</h1>
             <ul>
